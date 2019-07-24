@@ -5,7 +5,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber .class)
 @CucumberOptions(features="Mydemo_DDC5",glue="DDC_2mystepdefinitions",tags= {"@Regression,@sanity"},
-plugin={"html:target/cucumber-htmlreport.html"})
+plugin={"pretty","json:target/cucumber.json","html:target/cucumber-htmlreport.html"})
 
 
 public class Myrunner {
